@@ -20,7 +20,7 @@ COPY --from=builder /app/package-lock.json /app/
 
 
 ENV NODE_ENV=production
-
+ENV API_TOKEN=your-api-token
 
 RUN npm ci --ignore-scripts --omit-dev
 
