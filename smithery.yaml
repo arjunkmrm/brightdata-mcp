@@ -3,9 +3,6 @@ startCommand:
   configSchema:
     type: object
     properties:
-      apiToken:
-        type: string
-        description: "Bright Data API key, available in https://brightdata.com/cp/setting/users"
       webUnlockerZone:
         type: string
         default: 'mcp_unlocker'
@@ -19,7 +16,6 @@ startCommand:
       command: 'node', 
       args: ['server.js'], 
       env: { 
-        API_TOKEN: config.apiToken,
         WEB_UNLOCKER_ZONE: config.webUnlockerZone || "mcp_unlocker",
         BROWSER_ZONE: config.browserZone || "mcp_browser"
       } 
