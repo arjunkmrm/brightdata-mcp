@@ -3,6 +3,9 @@ startCommand:
   configSchema:
     type: object
     properties:
+      apiToken:
+        type: string
+        description: "Optional: Bright daa API token"
       webUnlockerZone:
         type: string
         default: 'mcp_unlocker'
